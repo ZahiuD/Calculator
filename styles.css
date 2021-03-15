@@ -1,0 +1,137 @@
+/* * {
+    align-items: center; */
+
+*{
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+body{
+    background-color: slateblue;
+    /* padding: 20%; */
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 55%;
+    padding-top:5%;
+    justify-content: first baseline;
+    font-size: 3rem;
+}
+
+#calculator {
+    zoom: 0.75;
+    display: grid;
+    flex-flow: column nowrap;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(8, 1fr); */
+    grid-template-rows: repeat(8, 1fr);
+    padding: 10px;
+    /* font-size: 30px; */
+    column-gap: 10px;
+    row-gap: 5px;
+    background-color: khaki;
+    font-size: 3rem;
+    
+    
+}
+
+ #calculator > div {
+    border: 1px solid pink;
+  }
+
+  /* th, td {
+    padding: 15px;
+  } */
+.message {
+    /* display: inline-block; */
+    display: table-row;
+    flex-flow: column nowrap;
+    grid-row: auto;
+    grid-column: 1/5;
+    text-align: center;
+    background-color: deeppink;
+    
+
+}
+
+
+
+
+
+
+.numbers  {
+    background-color: cornflowerblue
+
+}
+
+#inverse  {
+    background-color: red;
+    grid-template-columns: 1/4;
+    grid-template-rows: 3/4;
+}
+
+.multiplication{
+    background-color: red;
+    grid-template-columns: 1/4;
+    grid-template-rows: 3/4;
+
+}
+
+.division {
+    background-color: red;
+    grid-template-columns: 1/4;
+    grid-template-rows: 3/4;
+}
+
+#calculator > .clear {
+    /* background-color: blue; */
+    /* grid-template-columns: end; */
+    /* grid-template-rows: 3/5;
+    grid-template-columns: 4/4; */
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    background-color: beige;
+    font-size: 3rem;
+    }
+
+.NumbersFirstLine {
+    grid-template-rows: 5/6;
+    grid-template-columns: 1/2;
+    background-color: cornflowerblue;
+
+
+}
+
+
+.numbersForthLine{
+    grid-column-start:1;
+    grid-column-end: 3;
+    background-color: cornflowerblue;
+}
+
+#difference {
+    background-color: gray;
+}
+
+#addition{
+        background-color: gray;
+    
+}
+.equal {
+    background-color: gray;
+}
+
+button{
+    font-size: 3rem;
+}
+
+#userInput{
+    font-size: 3rem;
+    font-style: italic;
+    background-color: chartreuse;
+    
+}
+
